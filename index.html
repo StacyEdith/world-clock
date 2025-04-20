@@ -17,27 +17,29 @@
   <div class="container">
     <h1>World Clock</h1>
 
-    <select>
-      <option value="">Select City</option>
-      <option value="">Kyoto</option>
-      <option value="">London</option>
-      <option value="">Düsseeldorf</option>
+    <select id="city">
+      <option value="">Select City...</option>
+      <option value="Asia/Kyoto">Kyoto</option>
+      <option value="Europe/London">London</option>
+      <option value="Pacific/Auckland">Auckland</option>
     </select>
 
-    <div class="city" id="dortmund">
-      <div>
-        <h2>Dortmund 🇩🇪</h2>
-        <div class="date"></div>
+    <div id="cities">
+      <div class="city" id="dortmund">
+        <div>
+          <h2>Dortmund</h2>
+          <div class="date"></div>
+        </div>
+        <div class="time"></div>
       </div>
-      <div class="time"></div>
-    </div>
 
-    <div class="city" id="tokyo">
-      <div>
-        <h2>Tokyo 🇯🇵</h2>
-        <div class="date"></div>
+      <div class="city" id="tokyo">
+        <div>
+          <h2>Tokyo</h2>
+          <div class="date"></div>
+        </div>
+        <div class="time"></div>
       </div>
-      <div class="time"></div>
     </div>
   </div>
   <footer>This project was coded by
@@ -45,6 +47,7 @@
     <a href="https://github.com/StacyEdith/world-clock" target="_blank">is open sourced GitHub</a> and
     <a href="https://projectworldclock.netlify.app/" target="_blank">hosted on Netlify</a>
   </footer>
+
   <script src="javascript/script.js"></script>
 </body>
 
