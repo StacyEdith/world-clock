@@ -18,6 +18,17 @@ function updateTime() {
 
   tokyoDateElement.innerHTML = tokyoTime.format("MMMM Do YYYY");
   tokyoTimeElement.innerHTML = tokyoTime.format("h:mm:ss [<small>]A[</small>]");
+
+  //Alaska
+  let alaskaElement = document.querySelector("#alaska");
+  let alaskaDateElement = alaskaElement.querySelector(".date");
+  let alaskaTimeElement = alaskaElement.querySelector(".time");
+  let alaskaTime = moment().tz("US/Alaska");
+
+  alaskaDateElement.innerHTML = alaskaTime.format("MMMM Do YYYY");
+  alaskaTimeElement.innerHTML = alaskaTime.format(
+    "h:mm:ss [<small>]A[</small>]"
+  );
 }
 
 function updateCity(event) {
