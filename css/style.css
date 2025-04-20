@@ -68,9 +68,23 @@ select {
   line-height: 32px;
 }
 
+.all-cities-link {
+  display: block;
+  color: #a8c0ff;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
 footer {
   margin-top: 30px;
   text-align: center;
   font-size: 14px;
   color: #ddd;
+}
+
+footer a {
+  color: #a8c0ff;
+
+  font-weight: 600;
+  transition: color 0.3s ease;
 }
